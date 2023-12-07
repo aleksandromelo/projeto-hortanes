@@ -6,7 +6,7 @@ Certo dia um amigo pediu me que criasse uma planilha para uma espécie de cadast
 ## Tecnologias utilizadas
 - brModelo
 - PostgreSQL
-- Node JS
+- Node.js
 - TypeScript
 
 
