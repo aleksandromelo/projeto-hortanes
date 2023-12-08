@@ -1,0 +1,25 @@
+{
+  "name": "hortanes-api",
+  "version": "1.0.0",
+  "description": "Certo dia um amigo pediu me que criasse uma planilha para uma espécie de cadastro de seus clientes e fornecedores de seu pequeno comércio. Baseando me nisso resolvi desenvolver esse projeto (back end).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandromelo/projeto-hortanes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksandromelo/projeto-hortanes/issues"
+  },
+  "homepage": "https://github.com/aleksandromelo/projeto-hortanes#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  }
+}
