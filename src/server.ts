@@ -10,8 +10,9 @@ app.get("/customers", async(req, res) => {
     res.status(200).json(customers);
 });
 
-app.get("/fornecedores", (req, res) => {
-    res.send("Fornecedores");
+app.get("/suppliers", async(req, res) => {
+    const suppliers = await prisma.supplier.findMany();
+    res.send("Fornecedores").json(suppliers);
 });
 
 app.listen(PORT, ()=>{
