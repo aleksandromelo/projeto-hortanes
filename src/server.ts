@@ -1,10 +1,13 @@
 import express from "express";
+import { PrismaClient } from "@prisma/client";
 
 const app = express();
 const PORT = 3000;
+const prisma = new PrismaClient();
 
-app.get("/clientes", (req, res) => {
-    res.send("Clientes");
+app.get("/customers", async(req, res) => {
+    const customers = await prisma.customer.findMany();
+    res.status(200).json(customers);
 });
 
 app.get("/fornecedores", (req, res) => {
