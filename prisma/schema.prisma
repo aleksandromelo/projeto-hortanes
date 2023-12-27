@@ -21,7 +21,7 @@ model customer {
 
 model customer_adress {
   id          Int       @id @default(autoincrement())
-  customer_id Int?
+  customer_id Int      @unique
   street      String?   @db.VarChar(40)
   number      Int?
   complement  String?   @db.VarChar(20)
